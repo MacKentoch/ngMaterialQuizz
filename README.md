@@ -7,11 +7,17 @@ An angular material quizz (ES6).
 
 ##try it
 
-###fast way but some icon links may not work
+###fast way but some icon links may not load
 
 [link here](https://rawgit.com/MacKentoch/ngMaterialQuizz/master/public/index.html)
 
 ###on your own
+
+*Note :*
+- install jspm if you don't have it already
+```bash
+npm install jspm -g
+```
 
 install npm packages
 ```bash
@@ -27,12 +33,6 @@ then launch server with :
 ```bash
 gulp connect
 ```
-
-
-*Note :*
-- install jspm if you don't have it already
-```bash
-npm install jspm -g
 
 
 ##License
