@@ -33,9 +33,15 @@
 	"PYTHON_WORD"							: "Python",
 	"IOS_WORD"								: "iOS (Objective C, swift)",
 	"ANDROID_WORD"						: "android",
-	"ASM_WORD"								: "assembleur",	
-	"QUIZZ_Q1"								: "vous programmez pendant vos heures perdues",
-	"QUIZZ_Q2"								: "Vous nommeriez votre application",
+	
+	"YES_WORD"								: "yes",
+	"NO_WORD"									: "no",
+	"WHAT_IS_MATERIAL_Q"			: "what is material?",	
+	"SOMETHING_2_SAY_WORD"		: "quelque chose à ajouter",
+	
+	"QUIZZ_Q1"								: "vous aimez programmez",
+	"QUIZZ_Q2"								: "vous aimez material design?",
+	"QUIZZ_Q3"								: "something to say",
 		
 	"QUIZZ_NEXT_ALERT_MESSAGE"			: "terminé",
 	"QUIZZ_NEXT_NOT_VALID_MESSAGE"	: "réponse non valide",
