@@ -9,7 +9,7 @@ An angular material quizz (ES6).
 
 ###fast way
 
-[link here]()
+[link here](https://rawgit.com/MacKentoch/ngMaterialQuizz/master/public/index.html)
 
 ###on your own
 
