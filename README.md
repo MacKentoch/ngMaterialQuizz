@@ -9,11 +9,11 @@ Quizz content is simply defined by a simple json file : [like this one](https://
 
 ##try it
 
-###fast way but some icon may not load
+###fast way but some icons may not load from rawgit link
 
 [link here](https://rawgit.com/MacKentoch/ngMaterialQuizz/master/public/index.html)
 
-###on your own
+###on your own (gulp-connect will be your server)
 
 *Note :*
 - install jspm if you don't have it already
