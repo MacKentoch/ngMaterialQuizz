@@ -5,7 +5,7 @@ ngMaterialQuizz
 
 An angular material quizz (ES6).
 
-Quizz content is simmly defined by a simple json file : [like this one](https://github.com/MacKentoch/ngMaterialQuizz/blob/master/src/app/models/app.quizz.model.json)
+Quizz content is simply defined by a simple json file : [like this one](https://github.com/MacKentoch/ngMaterialQuizz/blob/master/src/app/models/app.quizz.model.json)
 
 ##try it
 
