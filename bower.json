@@ -1,0 +1,18 @@
+{
+  "name": "ngMaterialQuizz",
+  "version": "0.0.1",
+ "description": "QUIZZ (angular material, ES6)",
+  "keywords": [
+    "angular",
+    "material",
+    "quizz",
+    "ngMaterialQuizz",
+    "ES6",
+    "javascript"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "authors": [
+    "Erwan DATIN (MacKentoch)"
+  ]
+}

@@ -1,0 +1,91 @@
+	<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ngMaterialQuizz</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="an angular material quizz">
+		<meta name="author" content="Erwan DATIN">
+		<base href="/">
+    <style type="text/css">
+        [ng-cloak] {
+            display: none;
+        }
+    </style>		
+	</head>
+
+	<body layout="column" ng-controller="layoutController as layoutCtrl" ng-cloak="">
+		
+		<div layout="column" flex tabIndex="-1" role="main">
+			
+			<!--1st row : top navigation menu-->
+			<md-toolbar id="topNavigationBar" layout="row" layout-align="start center" class="md-whiteframe-z2 md-hue-2">		
+				<md-button 	class="md-icon-button" 
+										hide-gt-sm 
+										ng-click="layoutCtrl.toggleSidenav('left')" 
+										aria-label="Show Navigation Menu">
+					<md-icon md-menu-origin md-svg-src="svg/navigation/ic_menu_24px.svg"></md-icon>
+				</md-button>					
+				<div layout="row" layout-margin>
+					<h4 class="md-header" flex>ngMaterialQuizz</h4>	
+				</div>
+				<span flex></span>
+				<md-menu>
+					<md-button 	aria-label="Open menu" 
+											class="md-icon-button" 
+											ng-click="layoutCtrl.openConfigurationMenu($mdOpenMenu, $event)">
+						<md-icon md-svg-src="svg/navigation/ic_more_vert_24px.svg"></md-icon>	
+					</md-button>
+					<md-menu-content width="4">
+						<md-menu-item>
+							<md-button layout layout-fill class="md-menu-align-fix" ng-click="layoutCtrl.openLanguageBottomSheet($event)">
+								<md-icon md-svg-src="svg/action/ic_translate_24px.svg"></md-icon>
+								Language
+							</md-button>
+						</md-menu-item>
+						<md-menu-divider></md-menu-divider>
+						<md-menu-item>
+							<md-button layout layout-fill class="md-menu-align-fix" href="">
+								<md-icon md-svg-src="svg/custom/github-circle.svg"></md-icon>
+								github
+							</md-button>
+						</md-menu-item>																				
+					</md-menu-content>
+				</md-menu>				
+			</md-toolbar>
+			
+			<!--2nd row : sidenav and content-->
+			<div layout="row" flex>
+				<md-sidenav layout="column" 
+										class="md-sidenav-left md-whiteframe-z2" 
+										md-component-id="left" 
+										md-is-locked-open="$mdMedia('gt-sm')">
+					<md-list>
+						<div ng-repeat="group in layoutCtrl.leftSideNavModel track by $index" layout="column">
+							<md-divider></md-divider>						
+							<md-subheader class="transparentBackGround">{{group.translateKey  | translate}}</md-subheader>
+							<md-list-item ng-repeat="menu in group.menus track by $index"
+														ng-click="layoutCtrl.navigateTo(menu.uiSref, $event, 'left')"
+														md-ink-ripple>
+								<md-icon md-svg-src="{{ menu.icon}}"></md-icon>
+								<p> {{ menu.translateKey | translate }}</p>
+							</md-list-item>
+							<md-divider ng-if="$last"></md-divider>					
+						</div>	
+					</md-list>					
+				</md-sidenav>
+				
+				<div layout="column" flex id="content">
+					<md-content layout="column" flex md-scroll-y class="md-padding">
+						<div ui-view></div>
+					</md-content>
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="js/app.bundle.js"></script>						
+	</body>
+</html>
+	
+	

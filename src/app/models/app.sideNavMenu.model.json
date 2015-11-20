@@ -1,0 +1,24 @@
+﻿[
+	{
+		"name" 					: "navigation",
+		"translateKey" 	: "NAVIGATION_WORD",
+		"menus" : [
+			{
+				"name" 					: "home",
+				"uiSref"				: "home",
+				"label"					: "Langue",
+				"icon"					: "svg/action/ic_home_24px.svg",
+				"translateKey" 	: "HOME_WORD"			
+			},
+			{
+				"name" 					: "quizz",
+				"uiSref"				: "quizz",
+				"label"					: "quizz",
+				"icon"					: "svg/action/ic_question_answer_24px.svg",
+				"translateKey" 	: "QUIZZ_WORD"			
+			}		
+		]
+	}
+]
+
+

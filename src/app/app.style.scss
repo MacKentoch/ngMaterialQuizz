@@ -1,0 +1,27 @@
+@import "./components/common/app.common.style";
+@import "./components/layout/app.layout.style";
+@import "./components/home/app.home.style";
+@import "./components/bottomSheetLanguage/app.bottomSheetLanguage.style";
+
+
+body{
+	background-color: tranparent;	
+}
+
+/********************
+	ui-view animations
+********************/
+
+[ui-view].ng-enter{
+	animation: zoomIn 0.3s both ease-in;
+	z-index: 9999;	
+}
+
+[ui-view].ng-leave {
+	opacity: 1;
+}
+
+[ui-view].ng-leave-active {
+	opacity: 0;
+}
+

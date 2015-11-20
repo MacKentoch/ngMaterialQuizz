@@ -1,0 +1,139 @@
+<md-content id="quizzView" class="md-padding" ng-cloak>
+	
+	
+	<div ng-if="quizzCtrl.isQuizzStep() || quizzCtrl.isEndingQuizz()" layout="column" layout="center center">				
+		<div layout="row">
+			<span flex="10"></span>	
+			<p>{{'PROGRESSION_WORD' | translate}} : </p>
+			<span flex="10"></span>	
+		</div>		
+		<div layout="row">					
+			<span flex="10"></span>		
+			<md-progress-linear class="md-accent" md-mode="determinate" value="{{quizzCtrl.quizzProgressPourcent}}"></md-progress-linear>
+			<span flex="10"></span>	
+		</div>						
+	</div>
+							
+							
+	<div ng-if="quizzCtrl.selectedIndexTab === quizzCtrl.quizzEndingIndex" id="quizz_end">		
+		<md-card>			
+			<md-toolbar class="md-hue-2">
+						<div class="md-toolbar-tools">
+							<h1 class="md-headline">{{quizzCtrl.quizzModel.end.title_translate_id | translate}}</h1>
+						</div>
+			</md-toolbar>							
+			<md-card-content>
+			<div ng-repeat="etape in quizzCtrl.quizzModel.questions track by $index">							
+				<div layout="row" layout="start center" class="padd25">					
+					<span flex="25" hide-sm></span>									
+					<div layout="column" layout-align="start start" flex>																
+						<md-subheader  style="max-width:100%;">
+							<h2>{{etape.Q_translate_id | translate}} : </h2>
+						</md-subheader>													
+						<span layout="row" layout-align="end center" ng-repeat="choix in etape.liste_choix track by $index">							
+							<span flex></span>											
+							<div ng-switch="choix.type">								
+								<div ng-switch-when="checkbox">
+									<md-checkbox ng-model="choix.saisie" ng-disabled="true" aria-label="'choix' + {{choix.choix}}">
+										<span>{{choix.translateId | translate}}</span>
+									</md-checkbox>															
+								</div>								
+								<div ng-switch-when="textarea" layout-fill layout-wrap>
+									<md-input-container class="md-block">
+										<label>{{choix.translateId | translate}}</label>
+										<textarea ng-model="choix.saisie" ng-disabled="true" columns="1" md-maxlength="250" rows="5"></textarea>
+									</md-input-container>								
+								</div>								
+							</div>							
+							<span flex></span>																
+						</span>																
+					</div>															
+				</div>				
+			</div>								
+			</md-card-content>			
+			<md-card-actions layout="row" layout-align="center center">
+				<div layout="row" layout-align="end center">
+					<md-button class="md-accent md-raised" ng-click="quizzCtrl.goPreviousStep(quizzCtrl.quizzModel.questions.length)">
+						<span>{{'QUIZZ_PREVIOUS_BUTTON' | translate}}</span>	
+					</md-button>
+					<md-button class="md-accent md-raised" ng-click="quizzCtrl.saveQuizz($index)">
+						<span>{{'QUIZZ_VALID_BUTTON' | translate}}</span>	
+					</md-button>													
+				</div>							
+			</md-card-actions>			
+		</md-card>				
+	</div>
+	
+	
+	<div ng-if="quizzCtrl.selectedIndexTab === -1" id="quizz_intro">		
+		<md-card>			
+			<md-toolbar class="md-hue-2">
+						<div class="md-toolbar-tools">
+							<h1 class="md-headline">{{quizzCtrl.quizzModel.intro.title_translate_id | translate}}</h1>
+						</div>
+			</md-toolbar>							
+			<md-card-content>
+				<div ng-if="!quizzCtrl.isStarting">				
+					<h2 class="md-title animated" ng-class="{'fadeInDown' : quizzCtrl.animations.firstAnim, 'cache' : !quizzCtrl.animations.firstAnim}">{{quizzCtrl.quizzModel.intro.content_1_translate_id | translate}}</h2>
+					<p class="animated md-body-1" ng-class="{'fadeInDown' : quizzCtrl.animations.secondAnim, 'cache' : !quizzCtrl.animations.secondAnim}">{{quizzCtrl.quizzModel.intro.content_2_translate_id | translate}}</p>							
+				</div>
+				
+				<div layout="row" layout-sm="column" layout-align="space-around" ng-if="quizzCtrl.isStarting">
+						<md-progress-circular md-mode="indeterminate"></md-progress-circular>
+				</div>				
+
+			</md-card-content>			
+			<md-card-actions layout="row" layout-align="center center">
+			<md-button class="md-accent md-raised" ng-click="quizzCtrl.startQuizz()">
+				<span>{{quizzCtrl.quizzModel.intro.go_button_text_id | translate}}</span>	
+			</md-button>	
+			</md-card-actions>			
+		</md-card>				
+	</div>	
+	
+	
+		
+	<md-tabs ng-if="quizzCtrl.isQuizzStep()" md-border-bottom="" md-autoselect="" md-dynamic-height md-selected="quizzCtrl.selectedIndexTab">
+		<md-tab ng-repeat="etape in quizzCtrl.quizzModel.questions track by $index" label="{{etape.numero}}" ng-disabled="tab.disabled">						
+			<div layout="row" layout="center center" class="padd25">				
+				<span flex="25" hide-sm></span>								
+				<div layout="column" layout-align="start start" flex>										
+					<md-subheader  style="max-width:100%;">
+						<h2>{{etape.Q_translate_id | translate}} : </h2>
+					</md-subheader>											
+					<span layout="row" layout-align="end center" ng-repeat="choix in etape.liste_choix track by $index">						
+						<span flex></span>										
+						<div ng-switch="choix.type">							
+							<div ng-switch-when="checkbox">
+								<md-checkbox ng-model="choix.saisie" aria-label="'choix' + {{choix.choix}}">
+									<span>{{choix.translateId | translate}}</span>
+								</md-checkbox>															
+							</div>							
+							<div ng-switch-when="textarea" layout-fill layout-wrap>
+								<md-input-container class="md-block">
+									<label>{{choix.translateId | translate}}</label>
+									<textarea ng-model="choix.saisie" columns="1" md-maxlength="250" rows="5"></textarea>
+								</md-input-container>								
+							</div>							
+						</div>						
+						<span flex></span>															
+					</span>					
+					<p  class="md-default min-max" style="max-width:100%;">
+						<span>{{'QUIZZ_MIN_ANSWER_IS' | translate}} : {{etape.nombre_minimum_choix || 1}}</span> 
+						<span ng-if="etape.nombre_maximum_choix"> - {{'QUIZZ_MAX_ANSWER_IS' | translate}} : {{etape.nombre_maximum_choix}}</span> 
+					</p>										
+					<div layout="row" layout-align="end center">
+						<md-button class="md-accent md-raised" ng-click="quizzCtrl.goPreviousStep($index)" ng-if="$index !== 0">
+							<span>{{'QUIZZ_PREVIOUS_BUTTON' | translate}}</span>	
+						</md-button>
+						<md-button class="md-accent md-raised" ng-click="quizzCtrl.goNextStep($index)" ng-if="$index !== quizzCtrl.quizzModel.questions.length">
+							<span>{{'QUIZZ_NEXT_BUTTON' | translate}}</span>	
+						</md-button>								
+					</div>										
+				</div>													
+			</div>			
+		</md-tab>
+	</md-tabs>
+	
+
+</md-content>

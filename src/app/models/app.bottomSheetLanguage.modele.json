@@ -1,0 +1,17 @@
+[
+	
+	{
+		"lang" 				: "fr",
+		"translateId" : "FRANCAIS_WORD",
+		"libelle" 		: "français",
+		"icon"				: "svg/material/content/ic_flag_24px.svg"
+	},
+	
+	{
+		"lang" 				: "en",
+		"translateId" : "ANGLAIS_WORD",
+		"libelle" 		: "english",
+		"icon"				: "svg/material/content/ic_flag_24px.svg"
+	}	
+	
+]

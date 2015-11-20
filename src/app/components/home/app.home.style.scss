@@ -1,0 +1,27 @@
+@import "../common/app.common.style.variables";
+
+#homeContent {
+	height: 100%;
+}
+
+#materialLayout {
+	height: 100%;
+}
+
+#homeView{
+	opacity: 1;
+	
+	.cache {
+		opacity: 0;
+	}
+	
+	#imageLogo{
+	
+		width: 100%;
+	}	
+	
+	md-display-1{
+		color:rgb(255, 87, 34);
+	}	
+	
+}

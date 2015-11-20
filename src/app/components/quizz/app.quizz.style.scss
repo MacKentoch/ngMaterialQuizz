@@ -1,0 +1,36 @@
+#quizzView{
+	
+	.padd25{
+		padding:25px
+	}
+	
+	textarea{
+		min-width: 450px;
+	}
+	
+	.quizzContent{
+		width: 	450px;
+	}
+	
+	md-tabs-canvas {
+			height: 5px;
+	}
+	
+	
+	opacity: 1;
+	.cache {
+		opacity: 0;
+	}
+	
+	.md-subheader {   
+    line-height: 1.5em;
+	}
+	
+	.min-max{
+		margin: {
+			top: 25px;
+		}
+		font-size: 10px;
+	}
+	
+}
