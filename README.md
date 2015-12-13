@@ -3,9 +3,9 @@ ngMaterialQuizz
 
 ##What is it?
 
-An angular material quizz (ES6).
+An angular material quiz (ES6).
 
-Quizz content is simply defined by a simple json file : [like this one](https://github.com/MacKentoch/ngMaterialQuizz/blob/master/src/app/models/app.quizz.model.json)
+Quiz content is simply defined by a simple json file : [like this one](https://github.com/MacKentoch/ngMaterialQuizz/blob/master/src/app/models/app.quizz.model.json)
 
 ##try it
 
