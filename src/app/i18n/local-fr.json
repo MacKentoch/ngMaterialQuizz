@@ -15,8 +15,8 @@
 	"HOME_DETAIL_TEXT"				: "Il suffit juste de modifier le modèle JSON pour personnaliser le quizz.",
 	
 	"QUIZZ_START_BUTTON_TEXT"	: "démarrer le quizz",
-	"QUIZZ_INTRO_CONTENT1"		: "Ici un premier contenu de l'instroduction du quizz",
-	"QUIZZ_INTRO_CONTENT2"		: "Ici un deuxième contenu de l'instroduction du quizz",
+	"QUIZZ_INTRO_CONTENT1"		: "Ici un premier contenu de l'introduction du quizz",
+	"QUIZZ_INTRO_CONTENT2"		: "Ici un deuxième contenu de l'introduction du quizz",
 	"QUIZZ_INTRO_TITLE"				: "Quizz ",
 	"QUIZZ_END_TITLE"					: "Quizz terminé",
 	"QUIZZ_END_CONTENT"				: "merci pour votre participation",	
@@ -34,14 +34,14 @@
 	"IOS_WORD"								: "iOS (Objective C, swift)",
 	"ANDROID_WORD"						: "android",
 	
-	"YES_WORD"								: "yes",
-	"NO_WORD"									: "no",
-	"WHAT_IS_MATERIAL_Q"			: "what is material?",	
+	"YES_WORD"								: "oui",
+	"NO_WORD"									: "non",
+	"WHAT_IS_MATERIAL_Q"			: "qu'est ce que material?",	
 	"SOMETHING_2_SAY_WORD"		: "quelque chose à ajouter",
 	
 	"QUIZZ_Q1"								: "vous aimez programmez",
 	"QUIZZ_Q2"								: "vous aimez material design?",
-	"QUIZZ_Q3"								: "something to say",
+	"QUIZZ_Q3"								: "quelque chose à ajouter",
 		
 	"QUIZZ_NEXT_ALERT_MESSAGE"			: "terminé",
 	"QUIZZ_NEXT_NOT_VALID_MESSAGE"	: "réponse non valide",
