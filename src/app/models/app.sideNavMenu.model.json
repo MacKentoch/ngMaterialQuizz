@@ -8,6 +8,7 @@
 				"uiSref"				: "home",
 				"label"					: "Langue",
 				"icon"					: "svg/action/ic_home_24px.svg",
+        "url"           : "https://raw.githubusercontent.com/MacKentoch/ngMaterialQuizz/master/public/svg/action/ic_home_24px.svg",          
 				"translateKey" 	: "HOME_WORD"			
 			},
 			{
@@ -15,6 +16,7 @@
 				"uiSref"				: "quizz",
 				"label"					: "quizz",
 				"icon"					: "svg/action/ic_question_answer_24px.svg",
+        "url"           : "https://raw.githubusercontent.com/MacKentoch/ngMaterialQuizz/master/public/svg/action/ic_question_answer_24px.svg",
 				"translateKey" 	: "QUIZZ_WORD"			
 			}		
 		]

@@ -9,7 +9,7 @@ import btSheetlanguageTemplate	from '../bottomSheetLanguage/app.bottomSheetLangu
 const LAYOUT_CONTROLLER_NAME 		= 'layoutController';
 const LAYOUT_CONTROLLER_AS_NAME = 'layoutCtrl';
 
-class layoutController{
+class layoutController {
 	
 	constructor($mdSidenav,$state, $mdBottomSheet, $translate, $mdDialog){
 		this.$mdSidenav 		= $mdSidenav;

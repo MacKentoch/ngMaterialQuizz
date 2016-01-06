@@ -1,7 +1,14 @@
 <div id="homeView">
 	<md-card>
 		<md-subheader>
-			<h1 class="md-display-1 animated md-accent">{{'HOME_TITRE_1_QUIZZ' | translate}}</h1>	
+      <div class="homeTitleContainer">
+        <div layout="row" layout-align="center center">
+          <img ng-src="./img/angularjs.png" class="md-card-image reactMaterialImg" alt="Washed Out">
+        </div>
+        <div layout="row" layout-align="center center">
+          <h1 class="md-display-1 animated md-accent titleText">{{'HOME_TITRE_1_QUIZZ' | translate}}</h1>  
+        </div>        
+      </div>
 		</md-subheader>		
 		<md-card-content>
 			<h3 class="animated md-accent" ng-class="{'fadeInUp' : homeCtrl.animations.firstAnim, 'cache' : !homeCtrl.animations.firstAnim}">{{'HOME_TITRE_2_QUIZZ' | translate}}</h3>			

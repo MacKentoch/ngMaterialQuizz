@@ -8,6 +8,8 @@
 	height: 100%;
 }
 
+
+
 #homeView{
 	opacity: 1;
 	
@@ -16,12 +18,32 @@
 	}
 	
 	#imageLogo{
-	
+
 		width: 100%;
 	}	
-	
 	md-display-1{
 		color:rgb(255, 87, 34);
 	}	
+
+  .homeTitleContainer {
+    background: {
+      color : #F1F1F1;
+    }
+    
+    .reactMaterialImg {
+      color: #000;
+      height: 310px;
+      width:310px;
+    }
+    
+    .titleText {
+      color : red; 
+      font-size: 45px;
+      line-height: 48px;
+      font-weight: 400;
+    }
+    
+  }
+
 	
 }
