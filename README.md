@@ -9,9 +9,11 @@ Quiz content is simply defined by a simple json file : [like this one](https://g
 
 ##try it
 
+###Easy way
+
 [link here](https://raw.githubusercontent.com/MacKentoch/ngMaterialQuizz/v0.2.0/public/index.html)
 
-###on your own (gulp-connect will be your server)
+###On your own (gulp-connect will be your server)
 
 *Note :*
 - install jspm if you don't have it already
