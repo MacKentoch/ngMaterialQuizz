@@ -1,3 +1,5 @@
+[![GitHub version](https://badge.fury.io/gh/MacKentoch%2FngMaterialQuizz.svg)](https://badge.fury.io/gh/MacKentoch%2FngMaterialQuizz)
+
 ngMaterialQuizz
 =====
 
