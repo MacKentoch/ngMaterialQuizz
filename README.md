@@ -3,19 +3,23 @@ ngMaterialQuizz
 
 [![GitHub version](https://badge.fury.io/gh/MacKentoch%2FngMaterialQuizz.svg)](https://badge.fury.io/gh/MacKentoch%2FngMaterialQuizz)
 
-##What is it?
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/Mp96tCWH2KdajZuBzqB6jwj8/MacKentoch/ngMaterialQuizz'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/Mp96tCWH2KdajZuBzqB6jwj8/MacKentoch/ngMaterialQuizz.svg' />
+</a>
+
+## What is it?
 
 An angular material quiz (ES6).
 
 Quiz content is simply defined by a simple json file : [like this one](https://github.com/MacKentoch/ngMaterialQuizz/blob/master/src/app/models/app.quizz.model.json)
 
-##try it
+## try it
 
-###Easy way
+### Easy way
 
 [link here](https://rawgit.com/MacKentoch/ngMaterialQuizz/v0.2.1/public/index.html)
 
-###On your own (gulp-connect will be your server)
+### On your own (gulp-connect will be your server)
 
 *Note :*
 - install jspm if you don't have it already
@@ -39,7 +43,7 @@ gulp connect
 ```
 
 
-##License
+## License
 
 The MIT License (MIT)
 
