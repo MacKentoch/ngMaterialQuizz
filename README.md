@@ -3,9 +3,7 @@ ngMaterialQuizz
 
 [![GitHub version](https://badge.fury.io/gh/MacKentoch%2FngMaterialQuizz.svg)](https://badge.fury.io/gh/MacKentoch%2FngMaterialQuizz)
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/Mp96tCWH2KdajZuBzqB6jwj8/MacKentoch/ngMaterialQuizz'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/Mp96tCWH2KdajZuBzqB6jwj8/MacKentoch/ngMaterialQuizz.svg' />
-</a>
+
 
 ## What is it?
 
